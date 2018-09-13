@@ -265,8 +265,10 @@ export const CommentsButton = styled.a`
   vertical-align: middle;
   margin-right: 15px;
   text-decoration: none;
-  &:hover{
-    background-color: #f57c00;
+  @media only screen and (min-width: 768px) {
+    &:hover{
+      background-color: #f57c00;
+    }
   }
   @media only screen and (max-width: 768px) {
     {
@@ -294,10 +296,13 @@ export const HeartButton = styled(Button)`
   color: #ffb74d;
   font-size: .8rem;
   margin-right: 15px;
-  &:hover{
-    background-color: #f57c00;
-    color: #FFF;
+  @media only screen and (min-width: 768px) {
+    &:hover{
+      background-color: #f57c00;
+      color: #FFF;
+    }
   }
+
 
   @media only screen and (max-width: 768px) {
     {
@@ -361,8 +366,8 @@ export const FooterLink = styled.a.attrs({
 //////////////////////////////////////////////////////////////
 //    FOOTER, ie: loading and more
 //////////////////////////////////////////////////////////////
-export const MoreButton = styled.div`
-  background-color: #ffb74d;
+export const Loading = styled.div`
+  background-color: #f57c00;
   height: 2.5rem;
   line-height: 2.5rem;
   border: transparent;
@@ -372,7 +377,10 @@ export const MoreButton = styled.div`
   color: #fff;
   text-align: center;
   vertical-align: middle;
+`;
 
+export const MoreButton = styled(Loading)`
+  background-color: #ffb74d;
   &:hover{
     background-color: #f57c00;
   }
@@ -381,17 +389,4 @@ export const MoreButton = styled.div`
 export const MoreLink = styled(Link)`
   text-decoration: none;
   color: white;
-`;
-
-export const Loading = styled.div`
-  background-color: #ffb74d;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  border: transparent;
-  border-bottom-left-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
-  font-size: 14px;
-  color: #fff;
-  text-align: center;
-  vertical-align: middle;
 `;
