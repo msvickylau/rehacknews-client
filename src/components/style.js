@@ -363,8 +363,8 @@ export const FooterLink = styled.a.attrs({
 //////////////////////////////////////////////////////////////
 export const MoreButton = styled.div`
   background-color: #ffb74d;
-  height: 2rem;
-  line-height: 2rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
   border: transparent;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
@@ -385,8 +385,8 @@ export const MoreLink = styled(Link)`
 
 export const Loading = styled.div`
   background-color: #ffb74d;
-  height: 2rem;
-  line-height: 2rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
   border: transparent;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
