@@ -32,7 +32,7 @@ class SavesApi {
   }
 
   static deleteSave(save) {
-    const request = new  Request(`https://rehack-news-api.herokuapp.com/api/v1/saves${save.id}`, {
+    const request = new  Request(`https://rehack-news-api.herokuapp.com/api/v1/saves/${save.id}`, {
       method: 'DELETE',
       mode: 'cors',
       credentials: "same-origin",
